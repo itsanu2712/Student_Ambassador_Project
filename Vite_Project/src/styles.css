@@ -1,0 +1,51 @@
+.hero-section {
+  background-image: url('/bg_img.avif');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  /* opacity: 0.3; */
+  height: 100vh;
+  
+}
+
+.event-card {
+box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+padding: 1rem;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 1s ease-in-out forwards;
+}
+
+.suggestions-container {
+  max-height: 150px; /* Adjust as needed */
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+  padding-top: 25px;
+}
+
+.suggestions-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar */
+}
+
+
+  
+
+@keyframes fadeInAnimation {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
